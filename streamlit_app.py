@@ -65,7 +65,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 
 def insert_row_snowflake(new_fruit):
      with my_cnx.cursor as my_cur: 
-          my_cur.execute("SELECT * from fruit_load_list values('"+ "jackfruit", "papaya", "guava", "kiwi +"')")
+          my_cur.execute("SELECT * from fruit_load_list values('"+ "jackfruit", "papaya", "guava", "kiwi" +"')")
           return "Thanks for adding" + new_fruit     
 
 
